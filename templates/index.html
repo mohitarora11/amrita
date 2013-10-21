@@ -1,0 +1,15 @@
+<form id='id_enquiry' method='POST' action="{% url enquiry %}" onsubmit="return false">
+    {% csrf_token %}
+    <strong>Get your green business register with us.
+                       <span> our executive will get back to you with in 24hrs<span>
+    </strong>
+
+    <input type="text" name="name" maxlength="70" class="required" placeholder="Name" holder="Name" />
+
+    <input type="text" name="email" maxlength="70" class="email required"  placeholder="Email" holder="Email" />
+    <input type="text" name="mobile" maxlength="12" class="numericOnly" placeholder="Mobile" holder="Mobile" />
+
+    <textarea rows="3" cols="2" name="text" placeholder="Message" holder="Message"></textarea>
+    <input type="submit" class="button" value="Submit" name="" />
+
+</form>
